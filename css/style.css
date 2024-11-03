@@ -1,0 +1,584 @@
+/* reset code and common code starts hear */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: 0;
+    font-weight: 400;
+}
+
+html {
+    background-color: #fafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", serif;
+
+    /* font-family: "Italianno", cursive;  */
+}
+
+body {
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+
+}
+
+.justify_text {
+    text-align: justify;
+}
+
+.section_heading {
+    font-size: 8rem;
+    text-align: center;
+    font-family: "Italianno", cursive;
+
+}
+
+.section_center {
+    padding: 5rem 1rem;
+    min-height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.text_white {
+    color: white;
+}
+
+
+
+
+/* reset code and common code ends hear */
+
+
+
+/* Header section Start */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 2rem 1rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 5vh;
+
+}
+
+#menu_icon {
+    display: none;
+
+}
+
+.logo_figure {
+    border: 1px solid #fff;
+
+}
+
+.logo {
+    font-size: 4rem;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav li:hover {
+    background-color: #1913d5;
+    border-radius: 0.4rem;
+
+}
+
+.nav_link {
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Header section End */
+
+
+/* Bannar section Start   */
+
+#blog_bannar_section {
+    display: flex;
+    padding: 5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+
+#blog_bannar_section article {
+    flex-basis: 50%;
+    margin: 1rem;
+
+}
+
+#blog_bannar_section aside {
+    flex-basis: 50%;
+    text-align: center;
+
+}
+
+.banar_heading {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: white;
+
+}
+
+.bannar_description {
+    font-size: 1.8rem;
+
+
+}
+
+
+.bannar_img {
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid black;
+}
+
+/* Bannar section end  */
+
+/****About_me Section Start *****/
+
+#about_me {
+    background-color: #464646;
+
+}
+
+.card_container {
+    display: flex;
+    align-items: center;
+
+}
+
+.card {
+    flex: 1;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+    border-radius: 0.6rem;
+
+}
+
+.card:hover {
+    transform: scale(1.2);
+
+}
+
+.card_header {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.card_description {
+    padding: 0.4rem 0rem;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+
+}
+
+.card_btn {
+    align-self: center;
+    width: 80%;
+
+}
+
+
+/****About_me Section Ends****/
+
+
+/* Archives Section Start */
+
+.archives_container {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 2rem;
+    border-top: 0.1rem solid;
+    border-bottom: 0.1rem solid;
+
+}
+
+.archives_container_lists {
+    display: flex;
+    text-align: center;
+
+}
+
+.archives_container_list {
+    margin: 2rem;
+}
+
+
+.archives_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transition: 0.4s;
+
+}
+
+.archives_img:hover {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    transform: scale(1.1);
+
+}
+
+/* Archives Section Ends */
+
+/* Blog post Section Start */
+
+.blog_post_heading {
+    margin-bottom: 5rem;
+
+}
+
+.blog_post {
+    display: flex;
+    width: 70%;
+    margin: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: 0.4s;
+
+}
+
+.blog_post:hover {
+    transform: scale(1.1);
+
+}
+
+.blog_post_aside {
+    flex: 1;
+
+}
+
+.blog_content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.blog_img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog_heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.blog_sub_heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.blog_descrition {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+
+}
+
+.blog_btn {
+    width: 30%;
+}
+
+/* Blog post Section Ends */
+
+/* Contact Section Steart Hear  */
+#contact_section {
+    background-color: #4c4c4c;
+    min-height: 90vh;
+}
+
+#contact_form {
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    padding: 1rem;
+    margin: 1rem;
+    color: #fff;
+
+    /* display: flex;   {extra amar mone hoyche}
+    flex-direction: column; */
+}
+
+.form_control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form_control label {
+    font-size: 1.6rem;
+    flex: 0.3;
+
+}
+
+input,
+textarea {
+    flex: 0.7;
+    width: 40rem;
+    font-size: 1.6rem;
+    padding: 2rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+
+}
+
+textarea {
+    resize: none;
+    height: 22vh;
+}
+
+.from_btn_field {
+    /* display: flex;   {extra amar mone hoyche}*/
+    justify-content: end;
+}
+
+
+.contact_btn {
+    width: 30%;
+    transition: 0.3s;
+
+}
+
+.contact_btn:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+
+
+/* Contact Section End Hear  */
+
+/* Footer Sectinon Start */
+
+footer {
+    background-color: #000000;
+    padding: 1rem;
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.copyright_text {
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.footer_icon {
+    font-size: 2.5rem;
+}
+
+
+/* Footer Sectinon End */
+
+
+/* Responsive start hear */
+
+@media (max-width: 992px) {
+    #blog_bannar_section {
+
+        flex-direction: column;
+    }
+
+    #blog_bannar_section article {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+
+    }
+
+    .card_container {
+        width: 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    #blog_bannar_section article {
+        width: 80%;
+
+    }
+
+    .card_container {
+        width: 80%;
+
+    }
+
+    #archives {
+        min-height: auto;
+
+    }
+
+    .blog_post {
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 3rem;
+
+    }
+
+    #contact_section {
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 48.5%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #menu_icon {
+        display: block;
+        margin-top: 1.5rem;
+        cursor: pointer;
+
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    nav li {
+        display: block;
+        margin-right: 0;
+        margin: 1rem 0;
+        text-align: center;
+
+    }
+
+    #about_me {
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bannar_img {
+        max-width: 100%;
+
+    }
+
+    #blog_bannar_section {
+        min-height: auto;
+
+    }
+
+    #blog_bannar_section article {
+        width: 90%;
+
+    }
+
+    .card_container {
+        width: 90%;
+
+    }
+
+
+    .archives_container_lists {
+        flex-wrap: wrap;
+
+    }
+
+    .blog_post {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 3rem;
+
+    }
+
+    #contact_form {
+        width: 90%;
+    }
+
+    .form_control {
+
+        flex-direction: column;
+    }
+
+    .form_control label {
+        margin-bottom: 0.3rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #menubar2 {
+        display: flex;
+
+    }
+
+    /* Responsive start End */
